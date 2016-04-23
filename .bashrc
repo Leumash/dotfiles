@@ -191,6 +191,7 @@
 
 export PATH=$PATH:.
 export PATH=/mingw32/bin:$PATH
+export PATH="/c/Program Files/java/jdk1.8.0_91/bin":$PATH
 
 alias ls='/usr/bin/ls -F --color=tty --show-control-char'
 
