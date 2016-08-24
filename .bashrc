@@ -201,3 +201,5 @@ alias cleany=~/shortcuts/cleany.sh
 
 export PS1="\[\e]0;\w\a\]\n\`if [ \$? = 0 ]; then echo \[\e[33m\]^_^\[\e[0m\]; else echo \[\e[31m\]`echo \`case "$((RANDOM%3))" in 0) echo T_T;; 1) echo O_O;; *) echo @_@;; esac\``\[\e[0m\]; fi\` \[\e[32m\]\u@\h \[\e[35m\]$MSYSTEM\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n\$ "
 
+# Git alias to pretty print log history
+# git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
