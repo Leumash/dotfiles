@@ -1,0 +1,32 @@
+# Key bindings
+# Moves screen focus as opposed to C-a tab
+bind j focus down
+bind k focus up
+bind l focus right
+bind h focus left
+
+# Increase the scrollback buffer size (default is 100)
+defscrollback 30000
+
+# Need to turn on to avoid screen -T or resetting TERM away from its default value while inside screen sessions
+altscreen on
+
+# Turn it off!
+startup_message off
+
+# Bind escape key from ^a to `
+# To insert a regular backtick, type ``
+# escape ^aa # default
+# escape "^  "
+escape ``
+
+# Mouse tracking allows to switch region focus with clicks
+mousetrack on
+
+# the following two lines give a two-line status, with the current window highlighted
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
+
+# To resize, use the following key command:
+# escape + :resize +n
+
