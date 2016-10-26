@@ -27,3 +27,6 @@ hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)
 # To resize, use the following key command:
 # escape + :resize +n
 
+# Remove bell message
+bell_msg ""
+
