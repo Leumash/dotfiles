@@ -30,3 +30,6 @@ hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)
 # Remove bell message
 bell_msg ""
 
+# Start each shell as a login shell
+shell -$SHELL
+
