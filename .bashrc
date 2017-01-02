@@ -199,7 +199,14 @@ alias makey=~/shortcuts/makey.sh
 alias runy=~/shortcuts/runy/runy.sh
 alias cleany=~/shortcuts/cleany.sh
 
-export PS1="\[\e]0;\w\a\]\n\`if [ \$? = 0 ]; then echo \[\e[33m\]^_^\[\e[0m\]; else echo \[\e[31m\]`echo \`case "$((RANDOM%3))" in 0) echo T_T;; 1) echo O_O;; *) echo @_@;; esac\``\[\e[0m\]; fi\` \[\e[32m\]\u@\h \[\e[35m\]$MSYSTEM\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n\$ "
+# Import __git_ps1
+if [ -f ~/.git-prompt.sh ]; then
+    . ~/.git-prompt.sh
+fi
+
+export GIT_PS1_SHOWDIRTYSTATE=true
+
+export PS1="\[\e]0;\w\a\]\n\`if [ \$? = 0 ]; then echo \[\e[33m\]^_^\[\e[0m\]; else echo \[\e[31m\]`echo \`case "$((RANDOM%3))" in 0) echo T_T;; 1) echo O_O;; *) echo @_@;; esac\``\[\e[0m\]; fi\` \[\e[32m\]\u@\h \[\e[33m\]\w\033[38;5;21m\]\$(__git_ps1)\[\e[0m\]\n\$ "
 
 # Vi for bash
 set -o vi
