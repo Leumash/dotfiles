@@ -214,6 +214,3 @@ set -o vi
 # Set umask for default file creation permissions
 # 022 is the default but need to set for Windows 10 because \_(._.)_/
 umask 022
-
-# Git alias to pretty print log history
-# git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
